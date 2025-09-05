@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guia Rápido — Opera (Download, Instalação e VPN)</title>
+  <meta name="description" content="Passo a passo para baixar, instalar o navegador Opera e ativar a VPN integrada no Windows e macOS." />
+  <style>
+    :root{
+      --bg:#0f1223; --panel:#151936; --muted:#a8b0d6; --text:#eef1ff; --brand:#ff1b2d; --accent:#4dd0e1;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji','Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; background:linear-gradient(180deg,#0b0e1b, var(--bg)); color:var(--text);}
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1000px; margin:0 auto; padding:32px 20px}
+    .hero{display:grid; grid-template-columns:1.1fr .9fr; gap:24px; align-items:center}
+    .card{background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); border-radius:18px; padding:20px; box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .badge{display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border-radius:999px; background:rgba(77,208,225,.12); border:1px solid rgba(77,208,225,.35); color:#d8f8ff; font-size:12px; letter-spacing:.3px; text-transform:uppercase}
+    h1{font-size:clamp(28px,3.4vw,44px); line-height:1.1; margin:8px 0 12px}
+    h2{font-size:clamp(20px,2.4vw,28px); margin:0 0 12px}
+    p.lead{color:var(--muted); font-size:clamp(15px,1.4vw,18px)}
+    .cta{display:inline-flex; align-items:center; gap:10px; padding:14px 18px; border-radius:14px; background:linear-gradient(90deg, var(--brand), #ff5a6d); color:white; border:none; font-weight:700; cursor:pointer; box-shadow:0 10px 25px rgba(255,27,45,.35)}
+    .cta:hover{transform:translateY(-1px)}
+    .grid{display:grid; gap:16px}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .step{display:flex; gap:14px; align-items:flex-start}
+    .step .n{width:34px; height:34px; border-radius:10px; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12); display:grid; place-items:center; font-weight:700}
+    .muted{color:var(--muted)}
+    .img{width:100%; border-radius:14px; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.08); padding:14px; display:grid; place-items:center}
+    .footer{color:#bcd; opacity:.8; font-size:13px}
+    .note{border-left:4px solid var(--accent); padding:10px 14px; background:rgba(77,208,225,.08); color:#dbf7ff; border-radius:8px}
+    @media(max-width:900px){ .hero{grid-template-columns:1fr} .grid.cols-3{grid-template-columns:1fr} .grid.cols-2{grid-template-columns:1fr} }
+    code{background:rgba(255,255,255,.08); padding:2px 6px; border-radius:6px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero card">
+      <div>
+        <span class="badge">
+          <!-- small shield icon -->
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 3l7 3v6c0 4.97-3.05 9.33-7 10-3.95-.67-7-5.03-7-10V6l7-3z" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M9.5 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          VPN integrada + Bloqueador de anúncios
+        </span>
+        <h1>Instale o Opera e ative a VPN gratuita</h1>
+        <p class="lead">Guia rápido para Windows e macOS com link oficial, passos de instalação e como ligar a VPN nativa do Opera.</p>
+        <p>
+          <a class="cta" href="https://www.opera.com/download" target="_blank" rel="noopener">
+            <!-- download icon -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 3v10m0 0l4-4m-4 4l-4-4" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke="white" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+            Baixar Opera (site oficial)
+          </a>
+        </p>
+        <p class="muted">Requisitos (desktop): Windows 10+ ou macOS 11+. Veja <a href="https://www.opera.com/download/requirements" target="_blank" rel="noopener">detalhes</a>.</p>
+      </div>
+      <div class="img">
+        <!-- Opera "O" mark built with SVG for visual -->
+        <svg width="220" height="220" viewBox="0 0 200 200" aria-hidden="true">
+          <defs>
+            <radialGradient id="g" cx="50%" cy="50%" r="60%">
+              <stop offset="0%" stop-color="#ff8a99"/>
+              <stop offset="100%" stop-color="#ff1b2d"/>
+            </radialGradient>
+          </defs>
+          <circle cx="100" cy="100" r="80" fill="url(#g)" />
+          <ellipse cx="100" cy="100" rx="45" ry="70" fill="#0f1223"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="grid cols-2" style="margin-top:18px">
+      <div class="card">
+        <h2>1) Baixar</h2>
+        <div class="step">
+          <div class="n">1</div>
+          <div>Abra o link <a href="https://www.opera.com/download" target="_blank" rel="noopener">opera.com/download</a> e clique em <strong>Download</strong> para o seu sistema.</div>
+        </div>
+        <div class="step">
+          <div class="n">2</div>
+          <div>Se preferir, baixe o <em>offline installer</em> (instalador completo) disponível na mesma página.</div>
+        </div>
+        <div class="img" aria-label="Exemplo de botão de download">
+          <!-- generic mock screenshot -->
+          <svg width="100%" height="110" viewBox="0 0 640 110">
+            <rect width="640" height="110" rx="12" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.18)"/>
+            <rect x="24" y="28" width="180" height="54" rx="12" fill="#ff1b2d"/>
+            <text x="48" y="62" fill="white" font-size="22" font-weight="700">Download</text>
+            <rect x="224" y="36" width="220" height="38" rx="8" fill="rgba(77,208,225,.18)"/>
+            <text x="236" y="61" fill="#dffaff" font-size="16">Offline installer</text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>2) Instalar</h2>
+        <div class="grid cols-2">
+          <div>
+            <h3>Windows</h3>
+            <ol>
+              <li>Abra o arquivo <code>OperaSetup.exe</code>.</li>
+              <li>Confirme o controle de conta (UAC) e siga <em>Instalar</em>.</li>
+              <li>Ao final, clique em <em>Concluir</em> para abrir o Opera.</li>
+            </ol>
+          </div>
+          <div>
+            <h3>macOS</h3>
+            <ol>
+              <li>Abra o arquivo <code>Opera.dmg</code>.</li>
+              <li>Arraste o ícone do Opera para <em>Applications</em>.</li>
+              <li>Abra o Opera via <em>Launchpad</em> ou <em>Aplicativos</em>.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="img" aria-label="Exemplo de tela de instalação">
+          <!-- simple installer mock -->
+          <svg width="100%" height="120" viewBox="0 0 640 120">
+            <rect width="640" height="120" rx="12" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.18)"/>
+            <rect x="24" y="24" width="150" height="20" rx="5" fill="rgba(255,255,255,.12)"/>
+            <rect x="24" y="52" width="592" height="12" rx="6" fill="rgba(77,208,225,.28)"/>
+            <rect x="24" y="84" width="120" height="22" rx="7" fill="#ff1b2d"/>
+            <text x="44" y="100" fill="white" font-size="14" font-weight="700">Instalar</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h2>3) Ativar a VPN integrada</h2>
+      <div class="grid cols-2">
+        <div>
+          <div class="step">
+            <div class="n">1</div>
+            <div>Abra o Opera e vá em <strong>Configurações</strong> (ou <em>Preferences</em> no macOS).</div>
+          </div>
+          <div class="step">
+            <div class="n">2</div>
+            <div>No menu lateral, acesse <strong>Recursos</strong> &rarr; <strong>VPN</strong> e marque <em>Ativar VPN</em>.</div>
+          </div>
+          <div class="step">
+            <div class="n">3</div>
+            <div>Um <strong>ícone de VPN</strong> aparecerá à esquerda da barra de endereços. Clique nele para ligar/desligar e escolher localização virtual.</div>
+          </div>
+          <div class="note" style="margin-top:8px">
+            Dica: em <em>Configurações &rarr; Privacidade e segurança &rarr; VPN</em>, você pode desativar <strong>Ignorar VPN para mecanismos de pesquisa padrão</strong> se quiser que as buscas também passem pela VPN.
+          </div>
+        </div>
+        <div class="img" aria-label="Demonstração do badge de VPN no Opera">
+          <!-- VPN badge mock -->
+          <svg width="100%" height="140" viewBox="0 0 640 140">
+            <rect width="640" height="140" rx="12" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.18)"/>
+            <rect x="24" y="28" width="520" height="28" rx="8" fill="rgba(255,255,255,.12)"/>
+            <rect x="554" y="28" width="62" height="28" rx="8" fill="rgba(77,208,225,.35)"/>
+            <text x="570" y="47" fill="#e7fbff" font-size="14" font-weight="700">VPN</text>
+            <rect x="24" y="78" width="150" height="20" rx="6" fill="rgba(77,208,225,.18)"/>
+            <rect x="184" y="78" width="120" height="20" rx="6" fill="rgba(77,208,225,.18)"/>
+            <rect x="314" y="78" width="180" height="20" rx="6" fill="rgba(77,208,225,.18)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid cols-3" style="margin-top:18px">
+      <div class="card">
+        <h3>Localizações da VPN</h3>
+        <p class="muted">Você pode alternar entre localizações virtuais (por região) clicando no badge de VPN. Útil para mais privacidade e variação de IP.</p>
+      </div>
+      <div class="card">
+        <h3>Busca fora da VPN</h3>
+        <p class="muted">Por padrão, buscas em mecanismos padrão podem ignorar a VPN para resultados locais. Desative isso se preferir 100% via VPN.</p>
+      </div>
+      <div class="card">
+        <h3>VPN Pro (opcional)</h3>
+        <p class="muted">A VPN gratuita funciona dentro do navegador. O Opera também oferece o <em>VPN Pro</em> (pago) para proteção no sistema todo.</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h2>Requisitos do sistema (resumo)</h2>
+      <ul>
+        <li><strong>Windows:</strong> Windows 10 ou superior.</li>
+        <li><strong>macOS:</strong> macOS 11 ou superior.</li>
+      </ul>
+      <p class="muted">Para outras plataformas (Linux, Android, iOS), consulte a página de download.</p>
+    </div>
+
+    <p class="footer" style="margin-top:18px">
+      Este guia é independente e usa ícones/simulações para fins ilustrativos.
+      Links oficiais: <a href="https://www.opera.com/download" target="_blank" rel="noopener">Download Opera</a> ·
+      <a href="https://www.opera.com/download/requirements" target="_blank" rel="noopener">Requisitos</a> ·
+      <a href="https://help.opera.com/en/latest/security-and-privacy/" target="_blank" rel="noopener">Ajuda (Segurança &amp; Privacidade)</a> ·
+      <a href="https://help.opera.com/en/faq/" target="_blank" rel="noopener">FAQ</a>
+    </p>
+  </div>
+</body>
+</html>
